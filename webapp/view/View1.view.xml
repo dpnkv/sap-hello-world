@@ -1,0 +1,12 @@
+<mvc:View controllerName="sap.btp.helloworld.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <FlexBox direction="Row" alignItems="Center" class="sapUiTinyMarginBottom" id="Flexbox0">
+                <Text text="Click here -->" class="sapUiTinyMarginEnd" id="Text0"/>
+                <Button xmlns="sap.m" text="Click me" id="Button0" press=".onPress"/>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

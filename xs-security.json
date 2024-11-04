@@ -1,0 +1,29 @@
+{
+  "xsappname": "sapbtphelloworld",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+    "name": "$XSAPPNAME.Display",
+    "description": "Display the app as Platform or Business User"
+    }
+  ],
+  "role-templates": [
+    {
+    "name": "HelloWorldDisplayRole",
+    "description": "Hello World Display Role Template",
+    "scope-references": [
+        "$XSAPPNAME.Display"
+    ]
+    }
+  ],
+  "role-collections": [
+        {
+        "name": "HelloWorldDisplayRoleCollection",
+        "description": "Hello World Display Role Collection",
+        "role-template-references": [
+        "$XSAPPNAME.HelloWorldDisplayRole"
+            ]
+        }
+    ]
+}
